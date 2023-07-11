@@ -9,7 +9,7 @@
         <div class="content">
             <form action="/posts/{{ $post->id }}" method="POST">
                 @csrf
-            
+                @method('PUT')
                 <div class="content__title">
                     <h2>タイトル</h2>
                     <input type="text" name="post[title]" value="{{ $post->title }}">
